@@ -5,6 +5,8 @@ var $dipperSection = $('.dipper-section');
 var $dipper = $('.dipper');
 var $shuttleSection = $('.shuttle-section');
 var $shuttle = $('.shuttle');
+var $shipsSection = $('.ships-section');
+var $ships = $('.ships');
 
 /* $ reminds us that we are going to use jquery here */
 
@@ -23,3 +25,8 @@ $shuttleSection.waypoint(function () {
 	$shuttle.addClass('js-shuttle-fade');
 }, { offset: '50%' });
 
+$shipsSection.waypoint(function () {
+	$ships.addClass('js-ships-fade');
+}, { offset: '50%' });
+
+$shipsSection.css('background-position', 'center ' +scrollPos / 2 + 'px');
